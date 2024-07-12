@@ -1,0 +1,206 @@
+.header{
+    padding: 20px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+      
+    .right{
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+        font-size: larger;
+      }
+    
+    .center{
+        color: black;
+        font-family: "Bebas Neue", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        color: black;
+        display: flex;
+        gap: 50px;
+        font-size: larger;
+
+
+        a{
+        
+          text-decoration: none;
+          color: black;
+          position: relative;
+          font-size: 24px;
+          gap: 30px;
+          
+          &::after {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 3px;
+            bottom: 0;
+            left: 0;
+            background-color: rgb(0, 0, 0);
+            transition: width 0.3s ease-in-out; 
+        }
+  
+        &:hover::after {
+          width: 100%;
+      }
+          
+      }
+      }   
+      
+.left{
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    display: flex;
+    gap: 50px;
+    font-size: large;
+
+          
+
+    button{
+    border: none;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    background-color: black;
+    font-style: normal;
+    color: white;
+    display: flex;
+    text-align: center;
+    gap: 20px;
+    font-size: large;
+    padding-left: 17px;
+    padding-right: 17px;
+    text-align: center;
+    padding-top: 5px;
+           }
+
+    button:hover{
+      cursor: pointer;
+        }
+    }
+}
+
+.anime {
+    height: 740px;
+    width: 1500px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+.parent {
+    position: relative;
+}
+
+.parent:hover .two,
+.parent:hover .three,
+.parent:hover .four,
+.parent:hover .five,
+.parent:hover .six,
+.parent:hover .seven {
+    opacity: 1;
+}
+
+.parent:hover .two {
+    top: 305px;
+    left: 700px;
+    background-color: chartreuse;
+}
+
+.parent:hover .three {
+    top: 305px;
+    right: 710px;
+    background-color: aqua;
+}
+
+.parent:hover .four {
+    bottom: -390px;
+    right: 700px;
+    visibility: visible;
+    background-color: blue;
+}
+
+.parent:hover .five {
+    bottom: 100px;
+    right: 100px;
+    visibility: visible;
+    background-color: crimson;
+}
+
+.parent:hover .six {
+    top: 310px;
+    left: 720px;
+    visibility: visible;
+    background-color: darkblue;
+}
+
+.parent:hover .seven {
+    top: 310px;
+    right: 720px;
+    visibility: visible;
+}
+
+.one {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    top: 350px;
+    left: 750px;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.two,
+.three,
+.four,
+.five,
+.six,
+.seven {
+    height: 80px;
+    width: 80px;
+    background-color: black;
+    border-radius: 100%;
+    position: absolute;
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.two {
+    left: 0;
+    top: 0;
+}
+
+.three {
+   top: 0;
+   right: 0;
+}
+
+.four {
+    bottom: 50%;
+    right: 50%;
+    visibility: hidden;
+}
+
+.five {
+    bottom: 100px;
+    right: 0;
+    
+}
+
+.six {
+    left: 50%;
+    bottom: 50%;
+    visibility: hidden;
+}
+
+.seven {
+    right: 0;
+    bottom: 10px;
+    visibility: hidden;
+}
+
